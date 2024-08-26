@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="info">
+        <div class="inputs">
+            <input type="range" name="mass" id="mass_range" min="10" max="100" value="10">
+            <input type="range" name="mass" id="ro_range" min="1000" max="10000" value="1000" step="100">
+            <input type="range" name="mass" id="a_range" min="0.01" max="1" value="1" step="0.01">
+        </div>
+
+        <div class="text">
+            <p id="mass"></p>
+            <p id="ro"></p>
+            <p id="a"></p>
+            <p id="h"></p>
+            <p id="new_top"></p>
+        </div>
+    </div>
+
+    <div class="simulator">
+        <div id="height" class="height">
+            <div id="height_line" class="height_line"></div>
+            <p id="p_h">h</p>
+        </div>
+        
+        <div id="a1_div" class="a1_div">
+            <p id="p_a1">a</p>
+            <div class="a1" id="a1"></div>
+        </div>
+
+        <div class="a2_div" id="a2_div">
+            <div id="a2" class="a2"></div>
+            <p id="p_a2">a</p>
+        </div>
+
+        <div id="box_div" class="box_div">
+            <div class="box" id="box"></div>
+        </div>
+
+
+        <div class="fluid" id="fluid"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
