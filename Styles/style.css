@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --top: 300px;
+    --box-height: 100px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17.5px;
+}
+
+.info {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.simulator {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: var(--box-height);
+    background-color: rgb(243, 223, 5);
+     position: absolute;
+}
+
+.box_div {
+    width: 100px;
+    height: var(--box-height);
+    position: absolute;
+    top: calc(var(--top) - var(--box-height));
+    transition: top 1s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.height {
+    width: 30px;
+    margin-left: calc(var(--box-height) + 40px);
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(var(--top));
+    z-index: 1;
+}
+
+.height_line {
+    width: 6px;
+    height: 1px;
+    background-color: black;
+}
+
+.fluid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: var(--top);
+    background-color: rgba(13, 140, 224, 0.8);
+}
+
+.inputs {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column
+}
+
+.inputs>input {
+    margin-bottom: 10px;
+
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+.inputs>input::-webkit-slider-runnable-track {
+    background: #940000;
+    height: 10px;
+}
+
+.inputs>input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -2.85px;
+    background-color: #ff0000;
+    height: 16px;
+    width: 32px;
+ }
+
+.text {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.a1_div {
+    height: 100px;
+    width: 26px;
+    position: absolute;
+    left: 50%;
+    top: calc(var(--top) - var(--box-height));
+    transition: top 1s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.a1 {
+    height: 100px;
+    width: 6px;
+    background-color: black;
+}
+
+.a2_div {
+    height: 26px;
+    width: 100px;
+    position: absolute;
+    left: 299px;
+    top: calc(var(--top) + 9px);
+    transition: top 1s;
+    z-index: 1;
+}
+
+.a2 {
+    height: 6px;
+    width: 100px;
+    background-color: black;
+}
